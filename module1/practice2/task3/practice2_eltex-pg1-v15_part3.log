@@ -1,0 +1,530 @@
+eltex-pg1-v15@eltex-2026-autumn:~$ PS1='\u@\h:\w\$ '
+eltex-pg1-v15@eltex-2026-autumn:~$ unalias ls
+eltex-pg1-v15@eltex-2026-autumn:~$ bind 'set enable-bracketed-paste off'
+eltex-pg1-v15@eltex-2026-autumn:~$ ssh root@172.16.9.189
+Welcome to Ubuntu 24.04.2 LTS (GNU/Linux 6.8.0-147-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+ System information as of Thu Oct 29 11:55:16 AM UTC 2026
+
+  System load:  0.0                Processes:              111
+  Usage of /:   41.9% of 14.66GB   Users logged in:        0
+  Memory usage: 8%                 IPv4 address for ens18: 172.16.9.189
+  Swap usage:   0%
+
+ * Canonical Workshop gives developers fast, composable, reproducible, and
+   secure developer environments that are perfect for agentic workflows.
+
+   https://ubuntu.com/workshop
+
+Expanded Security Maintenance for Applications is not enabled.
+
+114 updates can be applied immediately.
+1 of these updates is a standard security update.
+To see these additional updates run: apt list --upgradable
+
+1 additional security update can be applied with ESM Apps.
+Learn more about enabling ESM Apps service at https://ubuntu.com/esm
+
+
+Roman Gozdok
+27.10.2026 15:00:24
+Last login: Wed Oct 28 12:02:52 2026 from 172.16.8.4
+root@eltex-practice2-pg1-v15:~# PS1='u@\h:\w\$ '
+u@eltex-practice2-pg1-v15:~# unalias ls grep
+u@eltex-practice2-pg1-v15:~# bind 'set enable-bracketed-paste off'
+u@eltex-practice2-pg1-v15:~# bind 'set enable-bracketed-paste off'PS1='\
+root@eltex-practice2-pg1-v15:~# which git gh
+/usr/bin/git
+root@eltex-practice2-pg1-v15:~# git --version
+git version 2.43.0
+root@eltex-practice2-pg1-v15:~# gh --verion
+Command 'gh' not found, but can be installed with:
+snap install gh  # version 2.86.0-112-gc30647b78, or
+apt  install gh  # version 2.45.0-1ubuntu0.3
+See 'snap info gh' for additional versions.
+root@eltex-practice2-pg1-v15:~# фapt update
+0% [Working]            Hit:1 http://ru.archive.ubuntu.com/ubuntu noble InRelease
+0% [Connecting to security.ubuntu.com (185.125.190.82)]0% [Waiting for headers] [Connecting to security.ubuntu.com (185.125.190.82)]                                                                             Get:2 http://ru.archive.ubuntu.com/ubuntu noble-updates InRelease [126 kB]
+0% [2 InRelease 11.8 kB/126 kB 9%] [Connecting to security.ubuntu.com (185.125.                                                                               Hit:3 http://security.ubuntu.com/ubuntu noble-security InRelease
+                                                                               0% [2 InRelease 84.2 kB/126 kB 67%]                                   0% [Waiting for headers]0% [Waiting for headers]0% [Waiting for headers]                        Hit:4 http://ru.archive.ubuntu.com/ubuntu noble-backports InRelease
+                        0% [Working]23% [Waiting for headers]                         Get:5 http://ru.archive.ubuntu.com/ubuntu noble-updates/main amd64 Packages [1,406 kB]
+24% [5 Packages 37.1 kB/1,406 kB 3%]                                    58% [Waiting for headers]                         Get:6 http://ru.archive.ubuntu.com/ubuntu noble-updates/universe amd64 Packages [1,707 kB]
+69% [6 Packages 458 kB/1,707 kB 27%]69% [5 Packages store 0 B] [6 Packages 478 kB/1,707 kB 28%]                                                           100% [5 Packages store 0 B]                           100% [Working]100% [6 Packages store 0 B]                           100% [Working]              Fetched 3,239 kB in 1s (3,808 kB/s)
+aptReading package lists... 0%Reading package lists... 0%Reading package lists... 0%Reading package lists... 3%Reading package lists... 3%Reading package lists... 5%Reading package lists... 5%Reading package lists... 5%Reading package lists... 5%Reading package lists... 5%Reading package lists... 5% Reading package lists... 41%Reading package lists... 41%Reading package lists... 57%Reading package lists... 57%Reading package lists... 57%Reading package lists... 57%Reading package lists... 58%Reading package lists... 58%Reading package lists... 61%Reading package lists... 61%Reading package lists... 64%Reading package lists... 64%Reading package lists... 69%Reading package lists... 69%Reading package lists... 73%Reading package lists... 73%Reading package lists... 78%Reading package lists... 78%Reading package lists... 80%Reading package lists... 80%Reading package lists... 80%Reading package lists... 80%Reading package lists... 80%Reading package lists... 80%Reading package lists... 80%Reading package lists... 80%Reading package lists... 80%Reading package lists... 80%Reading package lists... 80%Reading package lists... 80%Reading package lists... 80%Reading package lists... 80%Reading package lists... 80%Reading package lists... 80%Reading package lists... 80%Reading package lists... 80%Reading package lists... 83%Reading package lists... 83%Reading package lists... 85%Reading package lists... 85%Reading package lists... 90%Reading package lists... 90%Reading package lists... 94%Reading package lists... 94%Reading package lists... 98%Reading package lists... 98%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree... Done
+Reading state information... 0% Reading state information... 0%Reading state information... Done
+94 packages can be upgraded. Run 'apt list --upgradable' to see them.
+root@eltex-practice2-pg1-v15:~# apt install git gh
+Reading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree... Done
+Reading state information... 0% Reading state information... 0%Reading state information... Done
+git is already the newest version (1:2.43.0-1ubuntu7.4).
+git set to manually installed.
+The following NEW packages will be installed:
+  gh
+0 upgraded, 1 newly installed, 0 to remove and 94 not upgraded.
+Need to get 8,836 kB of archives.
+After this operation, 45.4 MB of additional disk space will be used.
+Do you want to continue? [Y/n] 
+0% [Working]            Get:1 http://ru.archive.ubuntu.com/ubuntu noble-updates/universe amd64 gh amd64 2.45.0-1ubuntu0.3 [8,836 kB]
+0% [1 gh 11.8 kB/8,836 kB 0%]80% [1 gh 8,836 kB/8,836 kB 100%]                                 100% [Working]              Fetched 8,836 kB in 1s (11.2 MB/s)
+
+Selecting previously unselected package gh.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 125711 files and directories currently installed.)
+Preparing to unpack .../gh_2.45.0-1ubuntu0.3_amd64.deb ...
+Progress: [  0%] [..........................................................] Progress: [ 20%] [###########...............................................] Unpacking gh (2.45.0-1ubuntu0.3) ...
+Progress: [ 40%] [#######################...................................] Setting up gh (2.45.0-1ubuntu0.3) ...
+Progress: [ 60%] [##################################........................] Progress: [ 80%] [##############################################............] Processing triggers for man-db (2.12.0-4build2) ...
+
+Scanning processes... [                                                        ]Scanning processes... [                                                        ]Scanning processes... [                                                        ]Scanning processes... [=                                                       ]Scanning processes... [=                                                       ]Scanning processes... [==                                                      ]Scanning processes... [==                                                      ]Scanning processes... [===                                                     ]Scanning processes... [===                                                     ]Scanning processes... [====                                                    ]Scanning processes... [====                                                    ]Scanning processes... [=====                                                   ]Scanning processes... [=====                                                   ]Scanning processes... [======                                                  ]Scanning processes... [======                                                  ]Scanning processes... [=======                                                 ]Scanning processes... [=======                                                 ]Scanning processes... [========                                                ]Scanning processes... [========                                                ]Scanning processes... [=========                                               ]Scanning processes... [=========                                               ]Scanning processes... [==========                                              ]Scanning processes... [==========                                              ]Scanning processes... [===========                                             ]Scanning processes... [===========                                             ]Scanning processes... [============                                            ]Scanning processes... [============                                            ]Scanning processes... [=============                                           ]Scanning processes... [=============                                           ]Scanning processes... [==============                                          ]Scanning processes... [==============                                          ]Scanning processes... [===============                                         ]Scanning processes... [===============                                         ]Scanning processes... [================                                        ]Scanning processes... [================                                        ]Scanning processes... [=================                                       ]Scanning processes... [=================                                       ]Scanning processes... [==================                                      ]Scanning processes... [==================                                      ]Scanning processes... [===================                                     ]Scanning processes... [===================                                     ]Scanning processes... [====================                                    ]Scanning processes... [====================                                    ]Scanning processes... [=====================                                   ]Scanning processes... [=====================                                   ]Scanning processes... [======================                                  ]Scanning processes... [======================                                  ]Scanning processes... [=======================                                 ]Scanning processes... [=======================                                 ]Scanning processes... [========================                                ]Scanning processes... [========================                                ]Scanning processes... [=========================                               ]Scanning processes... [=========================                               ]Scanning processes... [==========================                              ]Scanning processes... [==========================                              ]Scanning processes... [===========================                             ]Scanning processes... [===========================                             ]Scanning processes... [============================                            ]Scanning processes... [============================                            ]Scanning processes... [============================                            ]Scanning processes... [=============================                           ]Scanning processes... [=============================                           ]Scanning processes... [==============================                          ]Scanning processes... [==============================                          ]Scanning processes... [===============================                         ]Scanning processes... [===============================                         ]Scanning processes... [================================                        ]Scanning processes... [================================                        ]Scanning processes... [=================================                       ]Scanning processes... [=================================                       ]Scanning processes... [==================================                      ]Scanning processes... [==================================                      ]Scanning processes... [===================================                     ]Scanning processes... [===================================                     ]Scanning processes... [====================================                    ]Scanning processes... [====================================                    ]Scanning processes... [=====================================                   ]Scanning processes... [=====================================                   ]Scanning processes... [======================================                  ]Scanning processes... [======================================                  ]Scanning processes... [=======================================                 ]Scanning processes... [=======================================                 ]Scanning processes... [========================================                ]Scanning processes... [========================================                ]Scanning processes... [=========================================               ]Scanning processes... [=========================================               ]Scanning processes... [==========================================              ]Scanning processes... [==========================================              ]Scanning processes... [===========================================             ]Scanning processes... [===========================================             ]Scanning processes... [============================================            ]Scanning processes... [============================================            ]Scanning processes... [=============================================           ]Scanning processes... [=============================================           ]Scanning processes... [==============================================          ]Scanning processes... [==============================================          ]Scanning processes... [===============================================         ]Scanning processes... [===============================================         ]Scanning processes... [================================================        ]Scanning processes... [================================================        ]Scanning processes... [=================================================       ]Scanning processes... [=================================================       ]Scanning processes... [==================================================      ]Scanning processes... [==================================================      ]Scanning processes... [===================================================     ]Scanning processes... [===================================================     ]Scanning processes... [====================================================    ]Scanning processes... [====================================================    ]Scanning processes... [=====================================================   ]Scanning processes... [=====================================================   ]Scanning processes... [======================================================  ]Scanning processes... [======================================================  ]Scanning processes... [======================================================= ]Scanning processes... [======================================================= ]Scanning processes... [========================================================]Scanning processes...                                                           
+Scanning linux images... [                                                     ]Scanning linux images... [=============                                        ]Scanning linux images... [==========================                           ]Scanning linux images... [=======================================              ]Scanning linux images... [=====================================================]Scanning linux images...                                                        
+
+Running kernel seems to be up-to-date.
+
+No services need to be restarted.
+
+No containers need to be restarted.
+
+No user sessions are running outdated binaries.
+
+No VM guests are running outdated hypervisor (qemu) binaries on this host.
+root@eltex-practice2-pg1-v15:~# gh --version
+gh version 2.45.0 (2025-07-18 Ubuntu 2.45.0-1ubuntu0.3)
+https://github.com/cli/cli/releases/tag/v2.45.0
+root@eltex-practice2-pg1-v15:~# git config --global user.name "choprod691"
+root@eltex-practice2-pg1-v15:~# git config --global user.email "choorod90@gmail. com"
+root@eltex-practice2-pg1-v15:~# git config --global init.defaultBranch main
+root@eltex-practice2-pg1-v15:~# git config --global --list
+user.name=choprod691
+user.email=choorod90@gmail.com
+init.defaultbranch=main
+root@eltex-practice2-pg1-v15:~# cat ~/.gitconfig
+[user]
+	name = choprod691
+	email = choorod90@gmail.com
+[init]
+	defaultBranch = main
+root@eltex-practice2-pg1-v15:~# ssh-keygen -t ed25519 -f ~/.ssh/github_eltex -C  c"choorod90@gmail.com"
+Generating public/private ed25519 key pair.
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in /root/.ssh/github_eltex
+Your public key has been saved in /root/.ssh/github_eltex.pub
+The key fingerprint is:
+SHA256:0V5tcVr5ucOaqRm9fRBnkogKmERFkcdY6/DUWexI1Lc choorod90@gmail.com
+The key's randomart image is:
++--[ED25519 256]--+
+|   ..o+*...o. . +|
+|    . o o+.oo..* |
+|   . o..+.++.o+oo|
+|    o .= oo.o.E.+|
+|       .S..   .=.|
+|        .   . .+ |
+|           . .+..|
+|            o+o .|
+|           o.. ..|
++----[SHA256]-----+
+root@eltex-practice2-pg1-v15:~# ls -l ~/.ssh
+total 12
+-rw------- 1 root root 113 Oct 27 13:39 authorized_keys
+-rw------- 1 root root 464 Oct 29 12:05 github_eltex
+-rw-r--r-- 1 root root 101 Oct 29 12:05 github_eltex.pub
+root@eltex-practice2-pg1-v15:~# cat ~/ssh/github_eltex.pub
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIDjRi4Qcl+pDyX7R4Jtj+jNBU5fi+rkmuRu5UR6yhoT6 choorod90@gmail.com
+root@eltex-practice2-pg1-v15:~# пgh auth login
+? What account do you want to log into?  [Use arrows to move, type to filter]
+> GitHub.com
+  GitHub Enterprise Server
+? What account do you want to log into? GitHub.com
+? What is your preferred protocol for Git operations on this host?  [Use arrows to move, type to filter]
+> HTTPS
+  SSH
+? What is your preferred protocol for Git operations on this host?  [Use arrows to move, type to filter]
+  HTTPS
+> SSH
+? What is your preferred protocol for Git operations on this host? SSH
+? Upload your SSH public key to your GitHub account?  [Use arrows to move, type to filter]
+> /root/.ssh/github_eltex.pub
+  Skip
+? Upload your SSH public key to your GitHub account? /root/.ssh/github_eltex.pub
+? Title for your SSH key: (GitHub CLI) eltex-practice2-pg1-v15? Title for your SSH key: eltex-practice2-pg1-v15
+? How would you like to authenticate GitHub CLI?  [Use arrows to move, type to filter]
+> Login with a web browser
+  Paste an authentication token
+? How would you like to authenticate GitHub CLI? Login with a web browser
+
+! First copy your one-time code: C084-A030
+Press Enter to open github.com in your browser... 
+! Failed opening a web browser at https://github.com/login/device
+  exec: "xdg-open,x-www-browser,www-browser,wslview": executable file not found in $PATH
+  Please try entering the URL in your browser manually
+✓ Authentication complete.
+- gh config set -h github.com git_protocol ssh
+✓ Configured git protocol
+! Authentication credentials saved in plain text
+✓ Uploaded the SSH key to your GitHub account: /root/.ssh/github_eltex.pub
+✓ Logged in as choprod691
+root@eltex-practice2-pg1-v15:~# ssh-keygen -lf ~/.ssh/github_eltex.pub
+256 SHA256:0V5tcVr5ucOaqRm9fRBnkogKmERFkcdY6/DUWexI1Lc choorod90@gmail.com (ED25519)
+root@eltex-practice2-pg1-v15:~# пgh auth setup-git --hostname github.com
+root@eltex-practice2-pg1-v15:~# cat ~/.gitconfig
+[user]
+	name = choprod691
+	email = choorod90@gmail.com
+[init]
+	defaultBranch = main
+[credential "https://github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
+root@eltex-practice2-pg1-v15:~# ппgh auth status
+github.com
+  ✓ Logged in to github.com account choprod691 (/root/.config/gh/hosts.yml)
+  - Active account: true
+  - Git operations protocol: ssh
+  - Token: gho_************************************
+  - Token scopes: 'admin:public_key', 'gist', 'read:org', 'repo'
+root@eltex-practice2-pg1-v15:~# ssh -T git@github.com
+The authenticity of host 'github.com (140.82.121.4)' can't be established.
+ED25519 key fingerprint is SHA256:+DiY3wvvV6TuJJhbpZisF/zLDA0zPMSvHdkr4UvCOqU.
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'github.com' (ED25519) to the list of known hosts.
+git@github.com: Permission denied (publickey).
+root@eltex-practice2-pg1-v15:~# ыssh -T -i ~/.ssh/github_eltex git@github.com
+Enter passphrase for key '/root/.ssh/github_eltex': 
+Hi choprod691! You've successfully authenticated, but GitHub does not provide shell access.
+root@eltex-practice2-pg1-v15:~# cat >> ~/.ssh/config << 'EOF'
+> Host github.com
+> Identit
+> IdentitiesOnly yes
+> EOF
+root@eltex-practice2-pg1-v15:~# chmod 600 ~/.ssh/config
+root@eltex-practice2-pg1-v15:~# ssh -T git@github.com
+Enter passphrase for key '/root/.ssh/github_eltex': 
+Hi choprod691! You've successfully authenticated, but GitHub does not provide shell access.
+root@eltex-practice2-pg1-v15:~# �gh repo create eltex-linux-gozdok --public
+✓ Created repository choprod691/eltex-linux-gozdok on GitHub
+  https://github.com/choprod691/eltex-linux-gozdok
+root@eltex-practice2-pg1-v15:~# gh repo view eltex-linux-gozdok
+choprod691/eltex-linux-gozdok
+No description provided
+
+This repository does not have a README
+
+View this repository on GitHub: https://github.com/choprod691/eltex-linux-gozdok
+root@eltex-practice2-pg1-v15:~# gh repo list
+
+Showing 2 of 2 repositories in @choprod691
+
+NAME                           DESCRIPTION  INFO    UPDATED               
+choprod691/eltex-linux-gozdok               public  less than a minute ago
+choprod691/eltex                            public  about 1 day ago
+root@eltex-practice2-pg1-v15:~# mkdir ~/eltex-linux-gozdok && cd ~/eltex-linux-g ozdok
+root@eltex-practice2-pg1-v15:~/eltex-linux-gozdok# echo "# Отчёты по курсу" > " >> README.mdО" >> README.mdс" >> README.mdн" >> README.mdо" > README.mdв" ы прогрраммирования Linux
+root@eltex-practice2-pg1-v15:~/eltex-linux-gozdok# git init
+Initialized empty Git repository in /root/eltex-linux-gozdok/.git/
+root@eltex-practice2-pg1-v15:~/eltex-linux-gozdok# git add README.md
+root@eltex-practice2-pg1-v15:~/eltex-linux-gozdok# git commit -m "first commit"
+[main (root-commit) 146bb07] first commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+root@eltex-practice2-pg1-v15:~/eltex-linux-gozdok# git branch -M main
+root@eltex-practice2-pg1-v15:~/eltex-linux-gozdok# git remote add origin https://github.com/choprod691/eltex-linux-gozdok.git
+root@eltex-practice2-pg1-v15:~/eltex-linux-gozdok# git remote -v
+origin	https://github.com/choprod691/eltex-linux-gozdok.git (fetch)
+origin	https://github.com/choprod691/eltex-linux-gozdok.git (push)
+root@eltex-practice2-pg1-v15:~/eltex-linux-gozdok# git status
+On branch main
+nothing to commit, working tree clean
+root@eltex-practice2-pg1-v15:~/eltex-linux-gozdok# git push -u origin main
+Enumerating objects: 3, done.
+Counting objects:  33% (1/3)Counting objects:  66% (2/3)Counting objects: 100% (3/3)Counting objects: 100% (3/3), done.
+Delta compression using up to 2 threads
+Compressing objects:  50% (1/2)Compressing objects: 100% (2/2)Compressing objects: 100% (2/2), done.
+Writing objects:  33% (1/3)Writing objects:  66% (2/3)Writing objects: 100% (3/3)Writing objects: 100% (3/3), 280 bytes | 280.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/choprod691/eltex-linux-gozdok.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+root@eltex-practice2-pg1-v15:~/eltex-linux-gozdok# ьmkdir -p module1/task1
+root@eltex-practice2-pg1-v15:~/eltex-linux-gozdok# mkdir module1/task2
+root@eltex-practice2-pg1-v15:~/eltex-linux-gozdok# mkdir module1/task3
+::r:re:rep:repo:repor:report:report_:report_p:report_pa:report_part217.71.138.1:report_part
+kex_exchange_identification: read: Connection reset by peer
+Connection reset by 217.71.138.1 port 22
+scp: Connection closed
+root@eltex-practice2-pg1-v15:~/eltex-linux-gozdok# scp -P П�eltex-pg1-v15@217.eltex-pg1-v15@217.7eltex-pg1-v15@217.71eltex-pg1-v15@217.71.eltex-pg1-v15@217.71.1 eltex-pg1-v15@217.71.1 eltex-pg1-v15@217.71.1eltex-pg1-v15@217.71.144556 eltex-pg1-v15@217.71.1
+
+ssh: connect to host 217.71.138.1 port 44556: Connection timed out
+scp: Connection closed
+root@eltex-practice2-pg1-v15:~/eltex-linux-gozdok# ^C
+root@eltex-practice2-pg1-v15:~/eltex-linux-gozdok# дls -lR module1
+module1:
+total 12
+drwxr-xr-x 2 root root 4096 Oct 29 12:42 task1
+drwxr-xr-x 2 root root 4096 Oct 29 12:43 task2
+drwxr-xr-x 2 root root 4096 Oct 29 12:43 task3
+
+module1/task1:
+total 4
+-rw-r--r-- 1 root root 80 Oct 29 12:42 report_part1.txt
+
+module1/task2:
+total 12
+-rw-r--r-- 1 root root 12155 Oct 29 12:43 eltex-pg1-v15_part.log
+
+module1/task3:
+total 12
+-rw-r--r-- 1 root root  985 Oct 29 12:43 eltex-pg1-v15_part3_gt20M.log
+-rw-r--r-- 1 root root 5750 Oct 29 12:43 eltex-pg1-v15_part3.log
+root@eltex-practice2-pg1-v15:~/eltex-linux-gozdok# git add .
+root@eltex-practice2-pg1-v15:~/eltex-linux-gozdok# git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	new file:   module1/task1/report_part1.txt
+	new file:   module1/task2/eltex-pg1-v15_part.log
+	new file:   module1/task3/eltex-pg1-v15_part3.log
+	new file:   module1/task3/eltex-pg1-v15_part3_gt20M.log
+
+root@eltex-practice2-pg1-v15:~/eltex-linux-gozdok# git commit
+hint: Waiting for your editor to close the file... [ Reading... ][ Read 13 lines ]  GNU nano 7.2      /root/eltex-linux-gozdok/.git/COMMIT_EDITMSG                ^G Help^O Write Out ^W Where Is  ^K Cut^T Execute   ^C Location^X Exit^R Read File ^\ Replace   ^U Paste     ^J Justify   ^/ Go To Line# Please enter the commit message for your changes. Lines starting# with '#' will be ignored, and an empty message aborts the commit.# On branch main# Your branch is up to date with 'origin/main'.# Changes to be committed:#new file:   module1/task1/report_part1.txt#new file:   module1/task2/eltex-pg1-v15_part.log#new file:   module1/task3/eltex-pg1-v15_part3.log#new file:   module1/task3/eltex-pg1-v15_part3_gt20M.log*Отчёты практики первого модуля�       M-D DOS Format      M-A Append          M-B Backup File C Cancel           M-M Mac Format      M-P Prepend         ^T BrowseFile Name to Write: /root/eltex-linux-gozdok/.git/COMMIT_EDITMSG                MSG [ Writing... ] [ Wrote 13 lines ]^O Write Out ^W Where Is  ^K Cut       ^T Execute   ^C LocationX Exit      ^R Read File ^\ Replace   ^U Paste     ^J Justify   ^/ Go To Line[main dd2b42e] Отчёты практики первого модуля
+ 4 files changed, 499 insertions(+)
+ create mode 100644 module1/task1/report_part1.txt
+ create mode 100644 module1/task2/eltex-pg1-v15_part.log
+ create mode 100644 module1/task3/eltex-pg1-v15_part3.log
+ create mode 100644 module1/task3/eltex-pg1-v15_part3_gt20M.log
+root@eltex-practice2-pg1-v15:~/eltex-linux-gozdok# git push
+Enumerating objects: 11, done.
+Counting objects:   9% (1/11)Counting objects:  18% (2/11)Counting objects:  27% (3/11)Counting objects:  36% (4/11)Counting objects:  45% (5/11)Counting objects:  54% (6/11)Counting objects:  63% (7/11)Counting objects:  72% (8/11)Counting objects:  81% (9/11)Counting objects:  90% (10/11)Counting objects: 100% (11/11)Counting objects: 100% (11/11), done.
+Delta compression using up to 2 threads
+Compressing objects:  11% (1/9)Compressing objects:  22% (2/9)Compressing objects:  33% (3/9)Compressing objects:  44% (4/9)Compressing objects:  55% (5/9)Compressing objects:  66% (6/9)Compressing objects:  77% (7/9)Compressing objects:  88% (8/9)Compressing objects: 100% (9/9)Compressing objects: 100% (9/9), done.
+Writing objects:  10% (1/10)Writing objects:  20% (2/10)Writing objects:  30% (3/10)Writing objects:  40% (4/10)Writing objects:  50% (5/10)Writing objects:  60% (6/10)Writing objects:  70% (7/10)Writing objects:  80% (8/10)Writing objects:  90% (9/10)Writing objects: 100% (10/10)Writing objects: 100% (10/10), 5.21 KiB | 5.21 MiB/s, done.
+Total 10 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/choprod691/eltex-linux-gozdok.git
+   146bb07..dd2b42e  main -> main
+root@eltex-practice2-pg1-v15:~/eltex-linux-gozdok# mkdir ~/eltex-linux-gozdok_clone && cd ~/eltex-linux-gozdok_clone
+root@eltex-practice2-pg1-v15:~/eltex-linux-gozdok_clone# git clone https://github.com/choprod691/eltex-linux-gozdok.git .
+Cloning into '.'...
+remote: Enumerating objects: 13, done.
+remote: Counting objects:   7% (1/13)remote: Counting objects:  15% (2/13)remote: Counting objects:  23% (3/13)remote: Counting objects:  30% (4/13)remote: Counting objects:  38% (5/13)remote: Counting objects:  46% (6/13)remote: Counting objects:  53% (7/13)remote: Counting objects:  61% (8/13)remote: Counting objects:  69% (9/13)remote: Counting objects:  76% (10/13)remote: Counting objects:  84% (11/13)remote: Counting objects:  92% (12/13)remote: Counting objects: 100% (13/13)remote: Counting objects: 100% (13/13), done.
+remote: Compressing objects:   9% (1/11)remote: Compressing objects:  18% (2/11)remote: Compressing objects:  27% (3/11)remote: Compressing objects:  36% (4/11)remote: Compressing objects:  45% (5/11)remote: Compressing objects:  54% (6/11)remote: Compressing objects:  63% (7/11)remote: Compressing objects:  72% (8/11)remote: Compressing objects:  81% (9/11)remote: Compressing objects:  90% (10/11)remote: Compressing objects: 100% (11/11)remote: Compressing objects: 100% (11/11), done.
+remote: Total 13 (delta 0), reused 13 (delta 0), pack-reused 0 (from 0)
+Receiving objects:   7% (1/13)Receiving objects:  15% (2/13)Receiving objects:  23% (3/13)Receiving objects:  30% (4/13)Receiving objects:  38% (5/13)Receiving objects:  46% (6/13)Receiving objects:  53% (7/13)Receiving objects:  61% (8/13)Receiving objects:  69% (9/13)Receiving objects:  76% (10/13)Receiving objects:  84% (11/13)Receiving objects:  92% (12/13)Receiving objects: 100% (13/13)Receiving objects: 100% (13/13), 5.45 KiB | 5.45 MiB/s, done.
+root@eltex-practice2-pg1-v15:~/eltex-linux-gozdok_clone# ls -la
+total 20
+drwxr-xr-x  4 root root 4096 Oct 29 12:50 .
+drwx------ 11 root root 4096 Oct 29 12:50 ..
+drwxr-xr-x  8 root root 4096 Oct 29 12:50 .git
+drwxr-xr-x  5 root root 4096 Oct 29 12:50 module1
+-rw-r--r--  1 root root   83 Oct 29 12:50 README.md
+root@eltex-practice2-pg1-v15:~/eltex-linux-gozdok_clone# git log --oneline
+dd2b42e (HEAD -> main, origin/main, origin/HEAD) Отчёты практики первого модуля
+146bb07 first commit
+root@eltex-practice2-pg1-v15:~/eltex-linux-gozdok_clone# git remote -v
+origin	https://github.com/choprod691/eltex-linux-gozdok.git (fetch)
+origin	https://github.com/choprod691/eltex-linux-gozdok.git (push)
+root@eltex-practice2-pg1-v15:~/eltex-linux-gozdok_clone# git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+root@eltex-practice2-pg1-v15:~/eltex-linux-gozdok_clone# cd ~/eltex-linux-gozdok k
+root@eltex-practice2-pg1-v15:~/eltex-linux-gozdok# echo "Author: Gozdok Roman" > > README.md
+root@eltex-practice2-pg1-v15:~/eltex-linux-gozdok# git add README.md
+root@eltex-practice2-pg1-v15:~/eltex-linux-gozdok# git commit -m "Добавил автора  в ридми"
+[main 4a819d0] Добавил автора в ридми
+ 1 file changed, 1 insertion(+)
+root@eltex-practice2-pg1-v15:~/eltex-linux-gozdok# git push
+Enumerating objects: 5, done.
+Counting objects:  20% (1/5)Counting objects:  40% (2/5)Counting objects:  60% (3/5)Counting objects:  80% (4/5)Counting objects: 100% (5/5)Counting objects: 100% (5/5), done.
+Delta compression using up to 2 threads
+Compressing objects:  33% (1/3)Compressing objects:  66% (2/3)Compressing objects: 100% (3/3)Compressing objects: 100% (3/3), done.
+Writing objects:  33% (1/3)Writing objects:  66% (2/3)Writing objects: 100% (3/3)Writing objects: 100% (3/3), 353 bytes | 353.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas:   0% (0/1)remote: Resolving deltas: 100% (1/1)remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/choprod691/eltex-linux-gozdok.git
+   dd2b42e..4a819d0  main -> main
+root@eltex-practice2-pg1-v15:~/eltex-linux-gozdok# cd ~/eltex-linux-gozdok_clone e
+root@eltex-practice2-pg1-v15:~/eltex-linux-gozdok_clone# cat README.md
+# Отчёты по курсу Основы программирования Linux
+root@eltex-practice2-pg1-v15:~/eltex-linux-gozdok_clone# git fetch
+remote: Enumerating objects: 5, done.
+remote: Counting objects:  20% (1/5)remote: Counting objects:  40% (2/5)remote: Counting objects:  60% (3/5)remote: Counting objects:  80% (4/5)remote: Counting objects: 100% (5/5)remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects:  50% (1/2)remote: Compressing objects: 100% (2/2)remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 1), reused 3 (delta 1), pack-reused 0 (from 0)
+Unpacking objects:  33% (1/3)Unpacking objects:  66% (2/3)Unpacking objects: 100% (3/3)Unpacking objects: 100% (3/3), 333 bytes | 333.00 KiB/s, done.
+From https://github.com/choprod691/eltex-linux-gozdok
+   dd2b42e..4a819d0  main       -> origin/main
+root@eltex-practice2-pg1-v15:~/eltex-linux-gozdok_clone# cat README.md
+# Отчёты по курсу Основы программирования Linux
+root@eltex-practice2-pg1-v15:~/eltex-linux-gozdok_clone# git status
+On branch main
+Your branch is behind 'origin/main' by 1 commit, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
+
+nothing to commit, working tree clean
+root@eltex-practice2-pg1-v15:~/eltex-linux-gozdok_clone# git --no-pager log orig in/main
+commit 4a819d0b732c6c4b8e710fdcd8ffd43e948c9c68 (origin/main, origin/HEAD)
+Author: choprod691 <choorod90@gmail.com>
+Date:   Thu Oct 29 12:53:25 2026 +0000
+
+    Добавил автора в ридми
+
+commit dd2b42ea2386142a59417179191603275275fc10 (HEAD -> main)
+Author: choprod691 <choorod90@gmail.com>
+Date:   Thu Oct 29 12:44:38 2026 +0000
+
+    Отчёты практики первого модуля
+
+commit 146bb07eb7bb6d6b5733c34894680afd00d44a66
+Author: choprod691 <choorod90@gmail.com>
+Date:   Thu Oct 29 12:27:09 2026 +0000
+
+    first commit
+root@eltex-practice2-pg1-v15:~/eltex-linux-gozdok_clone# git --no-pager log --on eline main
+dd2b42e (HEAD -> main) Отчёты практики первого модуля
+146bb07 first commit
+root@eltex-practice2-pg1-v15:~/eltex-linux-gozdok_clone# git --no-pager diff mai n origin/main
+diff --git a/README.md b/README.md
+index 0ee3102..6d46c41 100644
+--- a/README.md
++++ b/README.md
+@@ -1 +1,2 @@
+ # Отчёты по курсу Основы программирования Linux
++Author: Gozdok Roman
+root@eltex-practice2-pg1-v15:~/eltex-linux-gozdok_clone# git merge
+Updating dd2b42e..4a819d0
+Fast-forward
+ README.md | 1 +
+ 1 file changed, 1 insertion(+)
+root@eltex-practice2-pg1-v15:~/eltex-linux-gozdok_clone# cat README.md
+# Отчёты по курсу Основы программирования Linux
+Author: Gozdok Roman
+root@eltex-practice2-pg1-v15:~/eltex-linux-gozdok_clone# git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+root@eltex-practice2-pg1-v15:~/eltex-linux-gozdok_clone# сcd ~/eltex-linux-gozdok k
+root@eltex-practice2-pg1-v15:~/eltex-linux-gozdok# mkdir module1/practice1
+root@eltex-practice2-pg1-v15:~/eltex-linux-gozdok# git mv module1/task1 module2/ 
+1/ task2
+git mv module1/task1 module1/task2 module1/task3 module1/practice1/
+root@eltex-practice2-pg1-v15:~/eltex-linux-gozdok# git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	renamed:    module1/task1/report_part1.txt -> module1/practice1/task1/report_part1.txt
+	renamed:    module1/task2/eltex-pg1-v15_part.log -> module1/practice1/task2/eltex-pg1-v15_part.log
+	renamed:    module1/task3/eltex-pg1-v15_part3.log -> module1/practice1/task3/eltex-pg1-v15_part3.log
+	renamed:    module1/task3/eltex-pg1-v15_part3_gt20M.log -> module1/practice1/task3/eltex-pg1-v15_part3_gt20M.log
+
+root@eltex-practice2-pg1-v15:~/eltex-linux-gozdok# mkdir -p module1/practice2/ta sk1
+root@eltex-practice2-pg1-v15:~/eltex-linux-gozdok# mkdir module1/practice2/taskmodule1/practice2/taskmodule1/practice2/task2 
+root@eltex-practice2-pg1-v15:~/eltex-linux-gozdok# mkdir module1/practice2/task2 
+3 3
+root@eltex-practice2-pg1-v15:~/eltex-linux-gozdok# ls -lR module1
+module1:
+total 8
+drwxr-xr-x 5 root root 4096 Oct 29 12:58 practice1
+drwxr-xr-x 5 root root 4096 Oct 29 12:59 practice2
+
+module1/practice1:
+total 12
+drwxr-xr-x 2 root root 4096 Oct 29 12:42 task1
+drwxr-xr-x 2 root root 4096 Oct 29 12:43 task2
+drwxr-xr-x 2 root root 4096 Oct 29 12:43 task3
+
+module1/practice1/task1:
+total 4
+-rw-r--r-- 1 root root 80 Oct 29 12:42 report_part1.txt
+
+module1/practice1/task2:
+total 12
+-rw-r--r-- 1 root root 12155 Oct 29 12:43 eltex-pg1-v15_part.log
+
+module1/practice1/task3:
+total 12
+-rw-r--r-- 1 root root  985 Oct 29 12:43 eltex-pg1-v15_part3_gt20M.log
+-rw-r--r-- 1 root root 5750 Oct 29 12:43 eltex-pg1-v15_part3.log
+
+module1/practice2:
+total 12
+drwxr-xr-x 2 root root 4096 Oct 29 13:00 task1
+drwxr-xr-x 2 root root 4096 Oct 29 13:01 task2
+drwxr-xr-x 2 root root 4096 Oct 29 12:59 task3
+
+module1/practice2/task1:
+total 60
+-rw-r--r-- 1 root root 59465 Oct 29 13:00 practice2_eltex-pg1-v15_part1.log
+
+module1/practice2/task2:
+total 220
+-rw-r--r-- 1 root root 223635 Oct 29 13:01 practice2_eltex-pg1-v15_part2.log
+
+module1/practice2/task3:
+total 0
+root@eltex-practice2-pg1-v15:~/eltex-linux-gozdok# git add .
+root@eltex-practice2-pg1-v15:~/eltex-linux-gozdok# git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	renamed:    module1/task1/report_part1.txt -> module1/practice1/task1/report_part1.txt
+	renamed:    module1/task2/eltex-pg1-v15_part.log -> module1/practice1/task2/eltex-pg1-v15_part.log
+	renamed:    module1/task3/eltex-pg1-v15_part3.log -> module1/practice1/task3/eltex-pg1-v15_part3.log
+	renamed:    module1/task3/eltex-pg1-v15_part3_gt20M.log -> module1/practice1/task3/eltex-pg1-v15_part3_gt20M.log
+	new file:   module1/practice2/task1/practice2_eltex-pg1-v15_part1.log
+	new file:   module1/practice2/task2/practice2_eltex-pg1-v15_part2.log
+
+root@eltex-practice2-pg1-v15:~/eltex-linux-gozdok# git commit
+hint: Waiting for your editor to close the file... [ Reading... ][ Read 15 lines ]  GNU nano 7.2      /root/eltex-linux-gozdok/.git/COMMIT_EDITMSG                ^G Help^O Write Out ^W Where Is  ^K Cut^T Execute   ^C Location^X Exit^R Read File ^\ Replace   ^U Paste     ^J Justify   ^/ Go To Line# Please enter the commit message for your changes. Lines starting# with '#' will be ignored, and an empty message aborts the commit.# On branch main# Your branch is up to date with 'origin/main'.# Changes to be committed:#renamed:    module1/task1/report_part1.txt -> module1/practice1/task1/r>#renamed:    module1/task2/eltex-pg1-v15_part.log -> module1/practice1/t>#renamed:    module1/task3/eltex-pg1-v15_part3.log -> module1/practice1/>#renamed:    module1/task3/eltex-pg1-v15_part3_gt20M.log -> module1/prac>#new file:   module1/practice2/task1/practice2_eltex-pg1-v15_part1.log#new file:   module1/practice2/task2/practice2_eltex-pg1-v15_part2.log*Добвил отчёты по 1-ому и 2-ои�му разделу
+       M-D DOS Format      M-A Append          M-B Backup File C Cancel           M-M Mac Format      M-P Prepend         ^T BrowseFile Name to Write: /root/eltex-linux-gozdok/.git/COMMIT_EDITMSG                 [ Writing... ] [ Wrote 15 lines ]^O Write Out ^W Where Is  ^K Cut       ^T Execute   ^C LocationX Exit      ^R Read File ^\ Replace   ^U Paste     ^J Justify   ^/ Go To Line[main 2c0907a] Добвил отчёты по 1-ому и 2-ому разделу
+ 6 files changed, 2928 insertions(+)
+ rename module1/{ => practice1}/task1/report_part1.txt (100%)
+ rename module1/{ => practice1}/task2/eltex-pg1-v15_part.log (100%)
+ rename module1/{ => practice1}/task3/eltex-pg1-v15_part3.log (100%)
+ rename module1/{ => practice1}/task3/eltex-pg1-v15_part3_gt20M.log (100%)
+ create mode 100644 module1/practice2/task1/practice2_eltex-pg1-v15_part1.log
+ create mode 100644 module1/practice2/task2/practice2_eltex-pg1-v15_part2.log
+root@eltex-practice2-pg1-v15:~/eltex-linux-gozdok# git push
+Enumerating objects: 10, done.
+Counting objects:  10% (1/10)Counting objects:  20% (2/10)Counting objects:  30% (3/10)Counting objects:  40% (4/10)Counting objects:  50% (5/10)Counting objects:  60% (6/10)Counting objects:  70% (7/10)Counting objects:  80% (8/10)Counting objects:  90% (9/10)Counting objects: 100% (10/10)Counting objects: 100% (10/10), done.
+Delta compression using up to 2 threads
+Compressing objects:  12% (1/8)Compressing objects:  25% (2/8)Compressing objects:  37% (3/8)Compressing objects:  50% (4/8)Compressing objects:  62% (5/8)Compressing objects:  75% (6/8)Compressing objects:  87% (7/8)Compressing objects: 100% (8/8)Compressing objects: 100% (8/8), done.
+Writing objects:  12% (1/8)Writing objects:  25% (2/8)Writing objects:  37% (3/8)Writing objects:  50% (4/8)Writing objects:  62% (5/8)Writing objects:  75% (6/8)Writing objects:  87% (7/8)Writing objects: 100% (8/8)Writing objects: 100% (8/8), 49.67 KiB | 12.42 MiB/s, done.
+Total 8 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/choprod691/eltex-linux-gozdok.git
+   4a819d0..2c0907a  main -> main
+root@eltex-practice2-pg1-v15:~/eltex-linux-gozdok# cd ~/eltex-linux-gozdok
+root@eltex-practice2-pg1-v15:~/eltex-linux-gozdok# git pull
+remote: Enumerating objects: 10, done.
+remote: Counting objects:  10% (1/10)remote: Counting objects:  20% (2/10)remote: Counting objects:  30% (3/10)remote: Counting objects:  40% (4/10)remote: Counting objects:  50% (5/10)remote: Counting objects:  60% (6/10)remote: Counting objects:  70% (7/10)remote: Counting objects:  80% (8/10)remote: Counting objects:  90% (9/10)remote: Counting objects: 100% (10/10)remote: Counting objects: 100% (10/10), done.
+remote: Compressing objects:  16% (1/6)remote: Compressing objects:  33% (2/6)remote: Compressing objects:  50% (3/6)remote: Compressing objects:  66% (4/6)remote: Compressing objects:  83% (5/6)remote: Compressing objects: 100% (6/6)remote: Compressing objects: 100% (6/6), done.
+Unpacking objects:  16% (1/6)Unpacking objects:  33% (2/6)Unpacking objects:  50% (3/6)Unpacking objects:  66% (4/6)Unpacking objects:  83% (5/6)remote: Total 6 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (6/6)Unpacking objects: 100% (6/6), 394.12 KiB | 1.31 MiB/s, done.
+From https://github.com/choprod691/eltex-linux-gozdok
+   2c0907a..ec32afd  main       -> origin/main
+Updating 2c0907a..ec32afd
+Fast-forward
+ module1/practice1/task1/practice1.pdf | Bin 0 -> 439670 bytes
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 module1/practice1/task1/practice1.pdf
+root@eltex-practice2-pg1-v15:~/eltex-linux-gozdok# exit
+logout
+Connection to 172.16.9.189 closed.
+eltex-pg1-v15@eltex-2026-autumn:~$ exit
+exit
