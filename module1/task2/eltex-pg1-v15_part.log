@@ -1,0 +1,358 @@
+eltex-pg1-v15@eltex-2026-autumn:~$ echo $STY
+1312594.eltex-pg1-v15_part2
+eltex-pg1-v15@eltex-2026-autumn:~$ PS1='\u@\h:\w\$'
+eltex-pg1-v15@eltex-2026-autumn:~$unalias ls grep
+bash: unalias: grep: not found
+eltex-pg1-v15@eltex-2026-autumn:~$ bind 'set enable-bracketed-paste off'
+eltex-pg1-v15@eltex-2026-autumn:~$cat -v ~/{}_part.log
+^[[?2004heltex-pg1-v15@eltex-2026-autumn:~$ echo $STY^M
+^[[?2004l^M1312594.eltex-pg1-v15_part2^M
+^[[?2004heltex-pg1-v15@eltex-2026-autumn:~$ ps^H^[[K^H^[[KPS1='\U^H^[[Ku@\h:\w\$'^M
+^[[?2004l^M^[[?2004heltex-pg1-v15@eltex-2026-autumn:~$UN^H^[[K^H^[[Kunalias ls grep^M
+^[[?2004l^Mbash: unalias: grep: not found^M
+^[[?2004heltex-pg1-v15@eltex-2026-autumn:~$bind 'set_eba^H^[[K^H^[[Knableo^H^[[K_^H^H^H^H^H^H^H^H _enable_^H^H^H^H^H^H^H^H^[[C^H^[[1Penable_^H^H^H^H^H^H^H^[[C^[[C^[[C^[[C^[[C^[[C^[[C^H^[[K-bracketer^H^[[Kd set off'^H^H^H^H^H^H^H^H^H^[[1@-^[[1@p^[[1@a^[[1@s^[[1@t^[[1@e^M
+^[[?2004l^Meltex-pg1-v15@eltex-2026-autumn:~$cat -v -^H^[[K~/$USER^H^H^H^H^H^[[C{USER^H^H^H^H1USER^H^H^H^H^H^[[1PUSER^H^H^H^H^G1USER^H^H^H^H^H^[[1PUSER^H^H^H^H^[[C^[[C^[[C^[[C^G}+^H^[[K_part.eltex-pg1-v15@eltex-2026-autumn:~$eltex-pg1-v15@eltex-2026-autumn:~$ PS1='
+> ^C
+eltex-pg1-v15@eltex-2026-autumn:~$ PS1='
+> ^C
+eltex-pg1-v15@eltex-2026-autumn:~$ PS1='\u@\h:\w\$ '
+eltex-pg1-v15@eltex-2026-autumn:~$ unalias ls grep
+bash: unalias: grep: not found
+eltex-pg1-v15@eltex-2026-autumn:~$ alias
+eltex-pg1-v15@eltex-2026-autumn:~$ type ls grep
+ls is /usr/bin/ls
+grep is /usr/bin/grep
+eltex-pg1-v15@eltex-2026-autumn:~$ bind 'set enable-bracketed-paste off'
+eltex-pg1-v15@eltex-2026-autumn:~$ ls
+ls           lsb_release  lsinitramfs  lslocks      lsmod        lspci
+lsattr       lscpu        lsipc        lslogins     lsns         lsusb
+lsblk        lsfd         lsirq        lsmem        lsof         
+eltex-pg1-v15@eltex-2026-autumn:~$ echo $HIST
+$HISTCMD       $HISTCONTROL   $HISTFILE      $HISTFILESIZE  $HISTSIZE
+eltex-pg1-v15@eltex-2026-autumn:~$ echo $HISTCONTROL
+ignoreboth
+eltex-pg1-v15@eltex-2026-autumn:~$ echo $HISTFILESIZE
+2000
+eltex-pg1-v15@eltex-2026-autumn:~$ echo $HISTSIZE
+1000
+eltex-pg1-v15@eltex-2026-autumn:~$ cd ~
+eltex-pg1-v15@eltex-2026-autumn:~$ ls -d .*
+.bash_history  .bash_logout  .bashrc  .config  .lesshst  .profile  .viminfo
+eltex-pg1-v15@eltex-2026-autumn:~$ ls .*
+.bash_history  .bash_logout  .bashrc  .lesshst	.profile  .viminfo
+
+.config:
+procps
+eltex-pg1-v15@eltex-2026-autumn:~$ bash --version
+GNU bash, version 5.2.15(1)-release (x86_64-pc-linux-gnu)
+Copyright (C) 2022 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+
+This is free software; you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+eltex-pg1-v15@eltex-2026-autumn:~$ history 5
+   77  cd ~
+   78  ls -d .*
+   79  ls .*
+   80  bash --version
+   81  history 5
+eltex-pg1-v15@eltex-2026-autumn:~$ HISTTIMEFORMAT='%d.%m.%Y %H:%M:%S 
+eltex-pg1-v15@eltex-2026-autumn:~$ history 5
+   79  20.10.2026 19:26:30 ls .*
+   80  20.10.2026 19:30:11 bash --version
+   81  20.10.2026 19:30:51 history 5
+   82  20.10.2026 19:32:07 HISTTIMEFORMAT='%d.%m.%Y %H:%M:%S '
+   83  20.10.2026 19:32:30 history 5
+eltex-pg1-v15@eltex-2026-autumn:~$ echo proverka_1
+proverka_1
+eltex-pg1-v15@eltex-2026-autumn:~$ history 3
+   83  20.10.2026 19:32:30 history 5
+   84  20.10.2026 19:36:19 echo proverka_1
+   85  20.10.2026 19:36:30 history 3
+eltex-pg1-v15@eltex-2026-autumn:~$ grep proverka ~/.bash_history
+eltex-pg1-v15@eltex-2026-autumn:~$ echo $PROMT_COMMAND
+
+eltex-pg1-v15@eltex-2026-autumn:~$ echo $PROMPT_COMMAND
+
+eltex-pg1-v15@eltex-2026-autumn:~$ PROMPT_COMMAND='history -a'
+eltex-pg1-v15@eltex-2026-autumn:~$ echo proverka_2
+proverka_2
+eltex-pg1-v15@eltex-2026-autumn:~$ history 3
+   89  20.10.2026 19:39:17 PROMPT_COMMAND='history -a'
+   90  20.10.2026 19:40:12 echo proverka_2
+   91  20.10.2026 19:40:19 history 3
+eltex-pg1-v15@eltex-2026-autumn:~$ grep proverka ~/.bash_history
+echo proverka_1
+grep proverka ~/.bash_history
+echo proverka_2
+eltex-pg1-v15@eltex-2026-autumn:~$ tail -6 ~/.bash_history
+#1792500012
+echo proverka_2
+#1792500019
+history 3
+#1792500044
+grep proverka ~/.bash_history
+eltex-pg1-v15@eltex-2026-autumn:~$ DATE=$(date +%d.%m.)
+eltex-pg1-v15@eltex-2026-autumn:~$ date +%d.%m.%Y
+20.10.2026
+eltex-pg1-v15@eltex-2026-autumn:~$ echo $DATE
+20.10.2026
+eltex-pg1-v15@eltex-2026-autumn:~$ TIME=$(date +%H:%M:%S)
+eltex-pg1-v15@eltex-2026-autumn:~$ echo %TIME
+%TIME
+eltex-pg1-v15@eltex-2026-autumn:~$ echo$
+19:48:26
+eltex-pg1-v15@eltex-2026-autumn:~$ echo $TIME
+19:48:26
+eltex-pg1-v15@eltex-2026-autumn:~$ date +%H:%M:%S
+19:49:40
+eltex-pg1-v15@eltex-2026-autumn:~$ DATE_TIME="$DATE $TIME"
+eltex-pg1-v15@eltex-2026-autumn:~$ echo $DATE_TIME
+20.10.2026 19:48:26
+eltex-pg1-v15@eltex-2026-autumn:~$ ls -d /bin/*[0-9]* /sbin/*[0-9]*
+/bin/addr2line			 /bin/x86_64-linux-gnu-ar
+/bin/b2sum			 /bin/x86_64-linux-gnu-as
+/bin/base32			 /bin/x86_64-linux-gnu-c++filt
+/bin/base64			 /bin/x86_64-linux-gnu-cpp
+/bin/bunzip2			 /bin/x86_64-linux-gnu-cpp-12
+/bin/bzip2			 /bin/x86_64-linux-gnu-dwp
+/bin/bzip2recover		 /bin/x86_64-linux-gnu-elfedit
+/bin/c89			 /bin/x86_64-linux-gnu-gcc
+/bin/c89-gcc			 /bin/x86_64-linux-gnu-gcc-12
+/bin/c99			 /bin/x86_64-linux-gnu-gcc-ar
+/bin/c99-gcc			 /bin/x86_64-linux-gnu-gcc-ar-12
+/bin/cpan5.36-x86_64-linux-gnu	 /bin/x86_64-linux-gnu-gcc-nm
+/bin/cpp-12			 /bin/x86_64-linux-gnu-gcc-nm-12
+/bin/diff3			 /bin/x86_64-linux-gnu-gcc-ranlib
+/bin/enc2xs			 /bin/x86_64-linux-gnu-gcc-ranlib-12
+/bin/gcc-12			 /bin/x86_64-linux-gnu-gcov
+/bin/gcc-ar-12			 /bin/x86_64-linux-gnu-gcov-12
+/bin/gcc-nm-12			 /bin/x86_64-linux-gnu-gcov-dump
+/bin/gcc-ranlib-12		 /bin/x86_64-linux-gnu-gcov-dump-12
+/bin/gcov-12			 /bin/x86_64-linux-gnu-gcov-tool
+/bin/gcov-dump-12		 /bin/x86_64-linux-gnu-gcov-tool-12
+/bin/gcov-tool-12		 /bin/x86_64-linux-gnu-gold
+/bin/grub-menulst2cfg		 /bin/x86_64-linux-gnu-gp-archive
+/bin/grub-mkpasswd-pbkdf2	 /bin/x86_64-linux-gnu-gp-collect-app
+/bin/grub-syslinux2cfg		 /bin/x86_64-linux-gnu-gp-display-html
+/bin/h2ph			 /bin/x86_64-linux-gnu-gp-display-src
+/bin/h2xs			 /bin/x86_64-linux-gnu-gp-display-text
+/bin/i386			 /bin/x86_64-linux-gnu-gprof
+/bin/linux32			 /bin/x86_64-linux-gnu-gprofng
+/bin/linux64			 /bin/x86_64-linux-gnu-ld
+/bin/lto-dump-12		 /bin/x86_64-linux-gnu-ld.bfd
+/bin/md5sum			 /bin/x86_64-linux-gnu-ld.gold
+/bin/md5sum.textutils		 /bin/x86_64-linux-gnu-lto-dump
+/bin/pdb3			 /bin/x86_64-linux-gnu-lto-dump-12
+/bin/pdb3.11			 /bin/x86_64-linux-gnu-nm
+/bin/perl5.36.0			 /bin/x86_64-linux-gnu-objcopy
+/bin/perl5.36-x86_64-linux-gnu	 /bin/x86_64-linux-gnu-objdump
+/bin/ping4			 /bin/x86_64-linux-gnu-ranlib
+/bin/ping6			 /bin/x86_64-linux-gnu-readelf
+/bin/pl2pm			 /bin/x86_64-linux-gnu-size
+/bin/pod2html			 /bin/x86_64-linux-gnu-strings
+/bin/pod2man			 /bin/x86_64-linux-gnu-strip
+/bin/pod2text			 /sbin/dumpe2fs
+/bin/pod2usage			 /sbin/e2freefrag
+/bin/py3clean			 /sbin/e2fsck
+/bin/py3compile			 /sbin/e2image
+/bin/py3versions		 /sbin/e2label
+/bin/pydoc3			 /sbin/e2mmpstatus
+/bin/pydoc3.11			 /sbin/e2scrub
+/bin/pygettext3			 /sbin/e2scrub_all
+/bin/pygettext3.11		 /sbin/e2undo
+/bin/python3			 /sbin/e4crypt
+/bin/python3.11			 /sbin/e4defrag
+/bin/sha1sum			 /sbin/fsck.ext2
+/bin/sha224sum			 /sbin/fsck.ext3
+/bin/sha256sum			 /sbin/fsck.ext4
+/bin/sha384sum			 /sbin/killall5
+/bin/sha512sum			 /sbin/mke2fs
+/bin/ssh-argv0			 /sbin/mkfs.ext2
+/bin/systemd-id128		 /sbin/mkfs.ext3
+/bin/traceroute6		 /sbin/mkfs.ext4
+/bin/traceroute6.db		 /sbin/resize2fs
+/bin/x86_64			 /sbin/tune2fs
+/bin/x86_64-linux-gnu-addr2line  /sbin/update-grub2
+eltex-pg1-v15@eltex-2026-autumn:~$ ls /bin /sbin | grep '[0-9]'
+addr2line
+b2sum
+base32
+base64
+bunzip2
+bzip2
+bzip2recover
+c89
+c89-gcc
+c99
+c99-gcc
+cpan5.36-x86_64-linux-gnu
+cpp-12
+diff3
+enc2xs
+gcc-12
+gcc-ar-12
+gcc-nm-12
+gcc-ranlib-12
+gcov-12
+gcov-dump-12
+gcov-tool-12
+grub-menulst2cfg
+grub-mkpasswd-pbkdf2
+grub-syslinux2cfg
+h2ph
+h2xs
+i386
+linux32
+linux64
+lto-dump-12
+md5sum
+md5sum.textutils
+pdb3
+pdb3.11
+perl5.36.0
+perl5.36-x86_64-linux-gnu
+ping4
+ping6
+pl2pm
+pod2html
+pod2man
+pod2text
+pod2usage
+py3clean
+py3compile
+py3versions
+pydoc3
+pydoc3.11
+pygettext3
+pygettext3.11
+python3
+python3.11
+sha1sum
+sha224sum
+sha256sum
+sha384sum
+sha512sum
+ssh-argv0
+systemd-id128
+traceroute6
+traceroute6.db
+x86_64
+x86_64-linux-gnu-addr2line
+x86_64-linux-gnu-ar
+x86_64-linux-gnu-as
+x86_64-linux-gnu-c++filt
+x86_64-linux-gnu-cpp
+x86_64-linux-gnu-cpp-12
+x86_64-linux-gnu-dwp
+x86_64-linux-gnu-elfedit
+x86_64-linux-gnu-gcc
+x86_64-linux-gnu-gcc-12
+x86_64-linux-gnu-gcc-ar
+x86_64-linux-gnu-gcc-ar-12
+x86_64-linux-gnu-gcc-nm
+x86_64-linux-gnu-gcc-nm-12
+x86_64-linux-gnu-gcc-ranlib
+x86_64-linux-gnu-gcc-ranlib-12
+x86_64-linux-gnu-gcov
+x86_64-linux-gnu-gcov-12
+x86_64-linux-gnu-gcov-dump
+x86_64-linux-gnu-gcov-dump-12
+x86_64-linux-gnu-gcov-tool
+x86_64-linux-gnu-gcov-tool-12
+x86_64-linux-gnu-gold
+x86_64-linux-gnu-gp-archive
+x86_64-linux-gnu-gp-collect-app
+x86_64-linux-gnu-gp-display-html
+x86_64-linux-gnu-gp-display-src
+x86_64-linux-gnu-gp-display-text
+x86_64-linux-gnu-gprof
+x86_64-linux-gnu-gprofng
+x86_64-linux-gnu-ld
+x86_64-linux-gnu-ld.bfd
+x86_64-linux-gnu-ld.gold
+x86_64-linux-gnu-lto-dump
+x86_64-linux-gnu-lto-dump-12
+x86_64-linux-gnu-nm
+x86_64-linux-gnu-objcopy
+x86_64-linux-gnu-objdump
+x86_64-linux-gnu-ranlib
+x86_64-linux-gnu-readelf
+x86_64-linux-gnu-size
+x86_64-linux-gnu-strings
+x86_64-linux-gnu-strip
+dumpe2fs
+e2freefrag
+e2fsck
+e2image
+e2label
+e2mmpstatus
+e2scrub
+e2scrub_all
+e2undo
+e4crypt
+e4defrag
+fsck.ext2
+fsck.ext3
+fsck.ext4
+killall5
+mke2fs
+mkfs.ext2
+mkfs.ext3
+mkfs.ext4
+resize2fs
+tune2fs
+update-grub2
+eltex-pg1-v15@eltex-2026-autumn:~$ echo $STY
+9766.eltex-pg1-v15_part2
+eltex-pg1-v15@eltex-2026-autumn:~$ ls /bin /sbin | grep '[0-9]' | head -5
+addr2line
+b2sum
+base32
+base64
+bunzip2
+eltex-pg1-v15@eltex-2026-autumn:~$ PS1='$USER@$HOSTNAME-$(date +%H:%M)> '
+eltex-pg1-v15@eltex-2026-autumn-20:05> echo "PS1"
+PS1
+eltex-pg1-v15@eltex-2026-autumn-20:05> echo "$
+$USER@$HOSTNAME-$(date +%H:%M)> 
+eltex-pg1-v15@eltex-2026-autumn-20:06> export PS1
+eltex-pg1-v15@eltex-2026-autumn-20:07> printenv PS1
+$USER@$HOSTNAME-$(date +%H:%M)> 
+eltex-pg1-v15@eltex-2026-autumn-20:08> grep PS1 /etc/bash.bashrc ~/.bashrc
+/etc/bash.bashrc:[ -z "$PS1" ] && return
+/etc/bash.bashrc:# but only if not SUDOing and have SUDO_PS1 set; then assume smart user.
+/etc/bash.bashrc:if ! [ -n "${SUDO_USER}" -a -n "${SUDO_PS1}" ]; then
+/etc/bash.bashrc:  PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
+/home/eltex-pg1-v15/.bashrc:    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
+/home/eltex-pg1-v15/.bashrc:    PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
+/home/eltex-pg1-v15/.bashrc:    PS1="\[\e]0;${debian_chroot:+($debian_chroot)}\u@\h: \w\a\]$PS1"
+eltex-pg1-v15@eltex-2026-autumn-20:09> bash --norc
+eltex-pg1-v15@eltex-2026-autumn-20:09> echo $SHLVL
+3
+eltex-pg1-v15@eltex-2026-autumn-20:10> exit
+exit
+eltex-pg1-v15@eltex-2026-autumn-20:10> echo $SHLVL
+2
+eltex-pg1-v15@eltex-2026-autumn-20:10> mkdir -v ~/$(date +%Y)-{01..12}
+mkdir: created directory '/home/eltex-pg1-v15/2026-01'
+mkdir: created directory '/home/eltex-pg1-v15/2026-02'
+mkdir: created directory '/home/eltex-pg1-v15/2026-03'
+mkdir: created directory '/home/eltex-pg1-v15/2026-04'
+mkdir: created directory '/home/eltex-pg1-v15/2026-05'
+mkdir: created directory '/home/eltex-pg1-v15/2026-06'
+mkdir: created directory '/home/eltex-pg1-v15/2026-07'
+mkdir: created directory '/home/eltex-pg1-v15/2026-08'
+mkdir: created directory '/home/eltex-pg1-v15/2026-09'
+mkdir: created directory '/home/eltex-pg1-v15/2026-10'
+mkdir: created directory '/home/eltex-pg1-v15/2026-11'
+mkdir: created directory '/home/eltex-pg1-v15/2026-12'
+eltex-pg1-v15@eltex-2026-autumn-20:13> ls -d ~/2026-*
+/home/eltex-pg1-v15/2026-01  /home/eltex-pg1-v15/2026-07
+/home/eltex-pg1-v15/2026-02  /home/eltex-pg1-v15/2026-08
+/home/eltex-pg1-v15/2026-03  /home/eltex-pg1-v15/2026-09
+/home/eltex-pg1-v15/2026-04  /home/eltex-pg1-v15/2026-10
+/home/eltex-pg1-v15/2026-05  /home/eltex-pg1-v15/2026-11
+/home/eltex-pg1-v15/2026-06  /home/eltex-pg1-v15/2026-12
+eltex-pg1-v15@eltex-2026-autumn-20:14> exit
+exit

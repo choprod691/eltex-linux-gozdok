@@ -1,0 +1,124 @@
+$ cd ~
+$ touch ${USER}_part3.log
+$ ls -l ${USER}_part3.log
+-rw-r--r-- 1 eltex-pg1-v15 eltex-pg1-v15 189 Oct 22 19:28 eltex-pg1-v15_part3.log
+$ mkdir -p D1/D2/D3
+$ ls -R D1
+D1:
+D2
+
+D1/D2:
+D3
+
+D1/D2/D3:
+$ touch D1/D2/file.txt
+$ ls -l D1/D2
+total 4
+drwxr-xr-x 2 eltex-pg1-v15 eltex-pg1-v15 4096 Oct 22 19:32 D3
+-rw-r--r-- 1 eltex-pg1-v15 eltex-pg1-v15    0 Oct 22 19:36 file.txt
+$ echo "Follow the white rabbit." >> D1/D2/file.txt
+$ cat D1/D2/file.txt
+Follow the white rabbit.
+$ ls -l D1/D2/file.txt
+-rw-r--r-- 1 eltex-pg1-v15 eltex-pg1-v15 25 Oct 22 19:44 D1/D2/file.txt
+$ ln D1/D2/file.txt D1/D2/D3/hard_link.txt
+$ ln -s ~/D1/D2/file.txt D1/D2/D3/sym_link.txt
+$ ls -l D1/D2/D3
+total 4
+-rw-r--r-- 2 eltex-pg1-v15 eltex-pg1-v15 25 Oct 22 19:44 hard_link.txt
+lrwxrwxrwx 1 eltex-pg1-v15 eltex-pg1-v15 34 Oct 22 19:55 sym_link.txt -> /home/eltex-pg1-v15/D1/D2/file.txt
+$ ls -li D1/D2/file.txt D1/D2/D3/hard_link.txt D1/D2/D3/sym_link.txt
+131268 -rw-r--r-- 2 eltex-pg1-v15 eltex-pg1-v15 61 Oct 22 20:04 D1/D2/D3/hard_link.txt
+131271 lrwxrwxrwx 1 eltex-pg1-v15 eltex-pg1-v15 34 Oct 22 19:55 D1/D2/D3/sym_link.txt -> /home/eltex-pg1-v15/D1/D2/file.txt
+131268 -rw-r--r-- 2 eltex-pg1-v15 eltex-pg1-v15 61 Oct 22 20:04 D1/D2/file.txt
+$ cat D1/D2/D3/hard_link.txt
+Follow the white rabbit.
+This line was added via a hard link
+$ cat D1/D2/D3/sym_link.txt
+Follow the white rabbit.
+This line was added via a hard link
+$ readlink D1/D2/D3/sym_link.txt
+/home/eltex-pg1-v15/D1/D2/file.txt
+$ echo 'This line was added via a hard link' >> D1/D2/D3/hard_link.txt >> D1/D2/D3/hard_link.txt
+$ cat D1/D2/file.txt
+Follow the white rabbit.
+This line was added via a hard link
+$ mv D1/D2/file.txt D1/
+$ ls -li D1 D1/D2
+D1:
+total 8
+131264 drwxr-xr-x 3 eltex-pg1-v15 eltex-pg1-v15 4096 Oct 23 14:31 D2
+131268 -rw-r--r-- 2 eltex-pg1-v15 eltex-pg1-v15   61 Oct 22 20:04 file.txt
+
+D1/D2:
+total 4
+131267 drwxr-xr-x 2 eltex-pg1-v15 eltex-pg1-v15 4096 Oct 22 19:55 D3
+$ cat D1/D2/D3/hard_link.txt
+Follow the white rabbit.
+This line was added via a hard link
+$ cat D1/D2/D3/sym_link.txt
+cat: D1/D2/D3/sym_link.txt: No such file or directory
+$ ls -l D1/D2/D3
+total 4
+-rw-r--r-- 2 eltex-pg1-v15 eltex-pg1-v15 61 Oct 22 20:04 hard_link.txt
+lrwxrwxrwx 1 eltex-pg1-v15 eltex-pg1-v15 34 Oct 22 19:55 sym_link.txt -> /home/eltex-pg1-v15/D1/D2/file.txt
+The hard link remained functional. It points to the same inode as file.txt, and mv changed only the file name in the directory; the inode remained the same. The symbolic link stores the path D1/D2/file.txt, but the file no longer exists there, so it became broken.
+$ rm -r D1/D2
+$ ls -R D1
+D1:
+file.txt
+$ ls -li D1/file.txt
+131268 -rw-r--r-- 1 eltex-pg1-v15 eltex-pg1-v15 61 Oct 22 20:04 D1/file.txt
+$ find / -path /proc -prune -o -type f -size +20M -print 2>/dev/null > ~/${USER}_part3_gt20M.log
+$ cat ~/${USER}_part3_gt20M.log
+/usr/bin/x86_64-linux-gnu-lto-dump-12
+/usr/lib/gcc/x86_64-linux-gnu/12/lto1
+/usr/lib/gcc/x86_64-linux-gnu/12/cc1
+/usr/lib/x86_64-linux-gnu/libicudata.so.72.1
+/boot/initrd.img-6.1.0-44-amd64
+/boot/initrd.img-6.1.0-50-amd64
+/boot/initrd.img-6.1.0-53-amd64
+/var/log/journal/8247b53b6ae84ae0ad9bb1c96113fd29/system@4f44ef78d53d4cd0a5555898b8d0015b-0000000000179b0c-000659e0105337c7.journal
+/var/log/journal/8247b53b6ae84ae0ad9bb1c96113fd29/system@00065be42e22b64e-29e46ef12bfd5644.journal~
+/var/log/journal/8247b53b6ae84ae0ad9bb1c96113fd29/system@00065b6e0461a953-e594878e03ffcfa9.journal~
+/var/log/journal/8247b53b6ae84ae0ad9bb1c96113fd29/system@00065c4bf168df91-94a074e01b8fde49.journal~
+/var/cache/apt/srcpkgcache.bin
+/var/cache/apt/pkgcache.bin
+/var/lib/apt/lists/deb.debian.org_debian_dists_bookworm_main_binary-amd64_Packages
+/var/lib/apt/lists/deb.debian.org_debian_dists_bookworm_main_source_Sources
+/var/lib/apt/lists/deb.debian.org_debian_dists_bookworm_main_i18n_Translation-en
+$ xargs -d '\n' du -h < ~/eltex-pg1-v15_part3_gt20M.log
+31M	/usr/bin/x86_64-linux-gnu-lto-dump-12
+31M	/usr/lib/gcc/x86_64-linux-gnu/12/lto1
+32M	/usr/lib/gcc/x86_64-linux-gnu/12/cc1
+30M	/usr/lib/x86_64-linux-gnu/libicudata.so.72.1
+33M	/boot/initrd.img-6.1.0-44-amd64
+33M	/boot/initrd.img-6.1.0-50-amd64
+33M	/boot/initrd.img-6.1.0-53-amd64
+41M	/var/log/journal/8247b53b6ae84ae0ad9bb1c96113fd29/system@4f44ef78d53d4cd0a5555898b8d0015b-0000000000179b0c-000659e0105337c7.journal
+25M	/var/log/journal/8247b53b6ae84ae0ad9bb1c96113fd29/system@00065be42e22b64e-29e46ef12bfd5644.journal~
+33M	/var/log/journal/8247b53b6ae84ae0ad9bb1c96113fd29/system@00065b6e0461a953-e594878e03ffcfa9.journal~
+25M	/var/log/journal/8247b53b6ae84ae0ad9bb1c96113fd29/system@00065c4bf168df91-94a074e01b8fde49.journal~
+39M	/var/cache/apt/srcpkgcache.bin
+39M	/var/cache/apt/pkgcache.bin
+48M	/var/lib/apt/lists/deb.debian.org_debian_dists_bookworm_main_binary-amd64_Packages
+49M	/var/lib/apt/lists/deb.debian.org_debian_dists_bookworm_main_source_Sources
+32M	/var/lib/apt/lists/deb.debian.org_debian_dists_bookworm_main_i18n_Translation-en
+$ find ~ -type f -mtime -1
+/home/eltex-pg1-v15/.viminfo
+/home/eltex-pg1-v15/eltex-pg1-v15_part3.log.bak
+/home/eltex-pg1-v15/D1/file.txt
+/home/eltex-pg1-v15/.bash_history
+/home/eltex-pg1-v15/eltex-pg1-v15_part3_gt20M.log
+/home/eltex-pg1-v15/eltex-pg1-v15_part3.log
+$ which find
+/usr/bin/find
+$ type -a find
+find is /usr/bin/find
+find is /bin/find
+$ file $(which find)
+/usr/bin/find: ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, BuildID[sha1]=5545a6c7162d325fbe5ffabcbfe4e5521b66ce70, for GNU/Linux 3.2.0, stripped
+$ file /boot/initrd.img*
+/boot/initrd.img-6.1.0-44-amd64: ASCII cpio archive (SVR4 with no CRC)
+/boot/initrd.img-6.1.0-50-amd64: ASCII cpio archive (SVR4 with no CRC)
+/boot/initrd.img-6.1.0-53-amd64: ASCII cpio archive (SVR4 with no CRC)
